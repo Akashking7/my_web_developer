@@ -7,9 +7,38 @@
   <style>
     /* Write your CSS Code here */
     .flag{
-      background-color: rgb(206, 17, 38);
-      height: 600px;
       width: 900px;
+      height: 600px;
+      background-color:#ce1126 ;
+      position: relative;
+    }
+    .flag > div{
+      width: 100%;
+      height: 300px;
+      background-color: #002868;
+      position: absolute;
+      top: 150px;
+    }
+
+    .flag > div > div{
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    p{
+      margin: 0;
+      font-size: 5rem;
+      text-align: center;
+      color: white;
+    }
+
+    body > div > div >div > p {
+      color: black;
     }
   </style>
 </head>
@@ -26,10 +55,10 @@ https://appbrewery.github.io/flag-of-laos/
 
 <body>
   <div class="flag">
-    <p><h1>The Flag</h1></p>
+    <p>The Flag</p>
     <div>
       <div>
-        <p><h1>of Laos</h1></p>
+        <p>of Laos</p>
       </div>
     </div>
   </div>
