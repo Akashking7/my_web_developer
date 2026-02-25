@@ -1,4 +1,5 @@
-function fibonacciGenerator(n) { 
+function fibonacciGenerator(n){
+    
     var output = [];
     if (n === 1) {
         output = [1];
