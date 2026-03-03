@@ -58,3 +58,12 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
+"workbench.colorCustomizations": {
+    "editorBracketHighlight.background1": "#00000000",
+    "editorBracketHighlight.background2": "#00000000",
+    "editorBracketHighlight.background3": "#00000000",
+    "editorBracketHighlight.background4": "#00000000",
+    "editorBracketHighlight.background5": "#00000000",
+    "editorBracketHighlight.background6": "#00000000",
+    "editorBracketHighlight.border": "#00000000"
+}
