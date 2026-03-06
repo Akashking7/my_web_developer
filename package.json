@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "type": "module",
+    "superheroes": "^4.0.0"
+  }
+}

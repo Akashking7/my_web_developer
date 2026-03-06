@@ -1,7 +1,3 @@
-const abc = {};
-abc.key = "akash";
-const abc2 = { ...abc };
+import { randomSuperhero } from "superheroes";
 
-abc2.key = "temp";
-
-console.log(abc.key)
+console.log(randomSuperhero());
