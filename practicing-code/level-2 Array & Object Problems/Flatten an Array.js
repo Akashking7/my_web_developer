@@ -1,5 +1,12 @@
 function flattenArray(arr) {
-  return arr.flat(Infinity);
+  let result = [];
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result = result.concat(flattenArray(item))
+    } else {
+      result.push(item)
+    }
+  }
+  return result;
 }
-
-console.log(flattenArray([1,[2,3],[4,[5]]]));
+console.log(flattenArray([1,[2,3],[4,[5]]]))
