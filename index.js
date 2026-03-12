@@ -1,10 +1,11 @@
-for (let i = 0; i <= 10; i++){
-  let arr = [1, 2, 3, 5];
+let arr = [1,2,3,5];
+let count = 10;
+let output = [];
 
-let result = [];
-  if (i = arr) {
-    result.push()
+for(let i = 1; i <= count; i++){
+  if(!arr.includes(i)){
+    output.push(i);
   }
 }
-return result;
-console.log(result)
+
+console.log(output);
