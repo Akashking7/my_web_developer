@@ -3,13 +3,13 @@ import axios from "axios";
 
 const app = express();
 const port = 3000;
-const API_URL = "https://secrets-api.appbrewery.com/";
+const API_URL = "https://secrets-api.appbrewery.com";
 
 //TODO 1: Fill in your values for the 3 types of auth.
-const yourUsername = "akash";
-const yourPassword = "akash";
-const yourAPIKey = "e513e8ca-4064-40d5-904e-4a26372af40e";
-const yourBearerToken = "64a75a07-f775-4380-a999-f70623f588c3";
+const yourUsername = "king";
+const yourPassword = "AKASHKING";
+const yourAPIKey = "99dd5284-e178-4a2c-b193-5697156765ad";
+const yourBearerToken = "2af92e8e-c15f-4763-8da1-a32b7efb1b6f";
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { content: "API Response." });
@@ -23,7 +23,7 @@ app.get("/noAuth", async (req, res) => {
     const result = await axios.get(API_URL + "/random");
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
-    res.status(404).send("Error:", error.message);
+    res.status(500).send(`Error: ${error.message}`);
   }
 });
 
@@ -50,7 +50,7 @@ app.get("/basicAuth", async (req, res) => {
     });
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
-    res.status(404).send("Error:", error.message);
+    res.status(500).send(`Error: ${error.message}`);
   }
 });
 
@@ -68,7 +68,7 @@ app.get("/apiKey", async (req, res) => {
     });
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
-    res.status(404).send("Error:", error.message);
+    res.status(500).send(`Error: ${error.message}`);
   }
 });
 
@@ -90,10 +90,10 @@ app.get("/bearerToken", async (req, res) => {
   */
 
   try {
-    const result = await axios.get(API_URL + "/secrets/2", config);
+    const result = await axios.get(API_URL + "/secrets/1", config);
     res.render("index.ejs", { content: JSON.stringify(result.data) });
   } catch (error) {
-    res.status(404).send("Error:", error.message);
+    res.status(500).send(`Error: ${error.message}`);
   }
 });
 
