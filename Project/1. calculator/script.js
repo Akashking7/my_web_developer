@@ -10,9 +10,14 @@ function clearDisplay() {
 
 function calculate() {
     try {
-        display.value = eval(display.value);
-    }
-    catch (error) {
-        display.value = "Error"
+        // allow only numbers and operators
+        if (!/^[0-9+\-*/.]+$/.test(display.value)) {
+            display.value = "Error";
+            return;
+        }
+
+        display.value = Function("return " + display.value)();
+    } catch {
+        display.value = "Error";
     }
 }
