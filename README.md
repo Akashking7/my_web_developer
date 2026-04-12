@@ -31,4 +31,4 @@ To become a Full Stack Developer by building real-world applications and masteri
 👉 This repository reflects my learning process. For complete projects, check my other repositories (coming soon).
 
 i am still continuing my journey 
-now
+now i am 
