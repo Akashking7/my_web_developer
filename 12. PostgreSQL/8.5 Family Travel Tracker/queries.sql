@@ -36,7 +36,7 @@ INSERT INTO homework_submission (mark, student_id)
 VALUES (98, 1), (87, 1), (88, 1)
 
 -- Join --
-SELECT * 
+SELECT *
 FROM student
 JOIN homework_submission
 ON student.id = student_id
