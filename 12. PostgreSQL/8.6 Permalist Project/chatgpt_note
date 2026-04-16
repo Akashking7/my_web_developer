@@ -1,0 +1,52 @@
+Here’s a short-note version of what she explained 👇
+
+🟦 Permalist Project (To-Do List with Database)
+🔹 1. Project Idea
+Build a permanent to-do list
+Uses PostgreSQL to store data
+Data does not disappear after refresh or server restart
+🔹 2. CRUD Operations
+
+App supports:
+
+Create → Add new task
+Read → Display tasks
+Update → Edit task
+Delete → Remove task
+🔹 3. Problem Before Database
+Data stored in array (temporary)
+Lost when server restarts ❌
+🔹 4. Solution
+Store data in database table: items
+CREATE TABLE items(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100) NOT NULL
+);
+🔹 5. Backend Setup
+Use:
+Node.js
+Express
+pg package (connect to Postgres)
+🔹 6. Read Data (Display)
+SELECT * FROM items ORDER BY id ASC;
+Fetch all tasks from database
+🔹 7. Create (Add Task)
+INSERT INTO items (title)
+VALUES ('Buy milk');
+🔹 8. Update (Edit Task)
+UPDATE items
+SET title = 'Buy bread'
+WHERE id = 1;
+🔹 9. Delete Task
+DELETE FROM items
+WHERE id = 1;
+🔹 10. Key Concept
+Data is now persistent (saved permanently)
+Page refresh = data still exists ✅
+🔹 11. Extra Features (Ideas)
+Add date column (ALTER TABLE)
+Multiple lists (daily, weekly)
+User-based lists (relationships)
+🧠 Final Summary
+
+Build a to-do app using Postgres where all CRUD operations are stored permanently in a database instead of temporary memory.
