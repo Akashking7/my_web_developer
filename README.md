@@ -1,4 +1,4 @@
-# Web Development Journey 🚀
+## Web Development Journey 🚀
 
 This repository documents my journey of learning Full Stack Web Development through hands-on practice and projects.
 
