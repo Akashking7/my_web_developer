@@ -17,7 +17,7 @@ app.use(
     secret: "TOPSECRETWORD",
     resave: false,
     saveUninitialized: true,
-  })
+  }),
 );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -29,7 +29,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "secrets",
-  password: "123456",
+  password: "Akash@12345",
   port: 5432,
 });
 db.connect();
@@ -69,7 +69,7 @@ app.post(
   passport.authenticate("local", {
     successRedirect: "/secrets",
     failureRedirect: "/login",
-  })
+  }),
 );
 
 app.post("/register", async (req, res) => {
@@ -90,7 +90,7 @@ app.post("/register", async (req, res) => {
         } else {
           const result = await db.query(
             "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
-            [email, hash]
+            [email, hash],
           );
           const user = result.rows[0];
           req.login(user, (err) => {
@@ -135,7 +135,7 @@ passport.use(
     } catch (err) {
       console.log(err);
     }
-  })
+  }),
 );
 
 passport.serializeUser((user, cb) => {
