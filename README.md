@@ -1,4 +1,4 @@
-# Web Development Journey 🚀
+## Web Development Journey 🚀
 
 This repository documents my journey of learning Full Stack Web Development through hands-on practice and projects.
 
@@ -8,7 +8,7 @@ This repository documents my journey of learning Full Stack Web Development thro
 * JavaScript (DOM, Events, Logic Building)
 * Node.js and Express.js
 * REST API development and integration
-* EJS templating
+* EJS templating vs code
 
 ## 🛠️ What I’ve Built
 
