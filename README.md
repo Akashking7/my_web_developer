@@ -2,7 +2,7 @@
 
 This repository documents my journey of learning Full Stack Web Development through hands-on practice and projects.
 
-## 📚 Topics Covered
+### 📚 Topics Covered
 
 * HTML, CSS, Flexbox, Grid, Bootstrap
 * JavaScript (DOM, Events, Logic Building)
