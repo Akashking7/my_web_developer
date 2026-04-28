@@ -18,7 +18,7 @@ This repository documents my journey of learning Full Stack Web Development thro
 * API integration using Axios
 * CRUD operations (GET, POST, PUT, PATCH, DELETE)
 
-## 📈 Progress
+#### 📈 Progress
 
 I have been consistently updating this repository since February 2026 as part of my daily learning and practice.
 
