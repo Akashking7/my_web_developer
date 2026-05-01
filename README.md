@@ -10,7 +10,7 @@ This repository documents my journey of learning Full Stack Web Development thro
 * REST API development and integration
 * EJS templating vs code
 
-## 🛠️ What I’ve Built
+#### 🛠️ What I’ve Built
 
 * Basic frontend projects (UI, layouts)
 * JavaScript mini-projects
