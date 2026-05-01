@@ -22,7 +22,7 @@ This repository documents my journey of learning Full Stack Web Development thro
 
 I have been consistently updating this repository since February 2026 as part of my daily learning and practice.
 
-## 🎯 Goal
+#### 🎯 Goal
 
 To become a Full Stack Developer by building real-world applications and mastering backend development.
 
